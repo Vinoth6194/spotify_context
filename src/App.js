@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="app">
       {console.log('Token State is', token)}
-      <Login />
+      {token ? <h1>Logged in</h1> : <Login />}
     </div>
   );
 }
