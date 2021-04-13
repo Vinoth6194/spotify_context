@@ -8,6 +8,8 @@ function App() {
   useEffect(() => {
     const token = getTokenFromUrl();
     console.log('Your token is', token);
+    //* TO hide the acces token from url for security
+    window.location.hash = '';
   }, []);
   return (
     <div className="app">
