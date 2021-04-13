@@ -13,6 +13,18 @@ const scopes = [
   'user-modify-playback-state',
 ];
 
+export const getTokenFromUrl = () => {
+  return window.location.hash
+    .substring(1)
+    .split('&')
+    .reduce((initial, item) => {
+      var parts = item.split('=');
+      initial[parts[0]] = decodeURIComponent(parts[1]);
+
+      return initial;
+    }, {});
+};
+
 //* %20 - ASCII code for space
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes.join(
   '%20'
