@@ -3,6 +3,7 @@
   place-items: center;
   height: 100vh;
   background-color: black;
+  overflow-y: hidden;
 }
 
 .login > img {
