@@ -8,8 +8,7 @@ import { useDataLayerValue } from './DataLayer';
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [token, setToken] = useState(null);
-  const [{ user }, dispatch] = useDataLayerValue();
+  const [{ user, token }, dispatch] = useDataLayerValue();
   //* as the Login comp is rendered from App comp, useEfffecct is used here to execute once
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -17,7 +16,10 @@ function App() {
     window.location.hash = '';
     const _token = hash.access_token;
     if (_token) {
-      setToken(_token);
+      dispatch({
+        type: 'SET_TOKEN',
+        token: _token,
+      });
 
       spotify.setAccessToken(_token);
       //*return an user obj from the spotify
@@ -30,14 +32,15 @@ function App() {
       });
     }
 
-    console.log('Your token is', _token);
+    // console.log('Your token is', _token);
     // console.log('Token State is', token);
   }, []);
-  console.log('From Spotify-ContextAPI', user);
+  console.log('From Spotify-ContextAPI, User', user);
+  console.log('From Spotify-ContextAPI, Token', token);
 
   return (
     <div className="app">
-      {console.log('Token State is', token)}
+      {/* {console.log('Token State is', token)} */}
       {token ? <Player /> : <Login />}
     </div>
   );
