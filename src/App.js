@@ -18,6 +18,10 @@ function App() {
       setToken(_token);
 
       spotify.setAccessToken(_token);
+      //*return an user obj from the spotify
+      spotify.getMe().then(user => {
+        console.log('From Spotify', user);
+      });
     }
 
     console.log('Your token is', _token);
