@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="app">
       {/* {console.log('Token State is', token)} */}
-      {token ? <Player /> : <Login />}
+      {token ? <Player spotify={spotify} /> : <Login />}
     </div>
   );
 }
