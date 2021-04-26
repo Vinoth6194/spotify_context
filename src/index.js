@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { initialState } from './reducer';
 import { DataLayer } from './DataLayer';
+import reducer from './reducer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <DataLayer initialState={initialState} reducer>
+    <DataLayer initialState={initialState} reducer={reducer}>
       <App />
     </DataLayer>
   </React.StrictMode>,
