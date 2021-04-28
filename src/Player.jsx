@@ -1,7 +1,15 @@
 import React from 'react';
 
 function Player({ spotify }) {
-  return <div>Welcome to Spotify</div>;
+  return (
+    <div>
+      <div className="player">
+        {/* Sidebar */}
+        {/* Body */}
+      </div>
+      {/* Footer */}
+    </div>
+  );
 }
 
 export default Player;
