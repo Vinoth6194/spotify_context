@@ -34,6 +34,10 @@ function App() {
 
     // console.log('Your token is', _token);
     // console.log('Token State is', token);
+    spotify.getUserPlaylists().then(playlists => {
+      type: 'SET_PLAYLISTS';
+      playlists: playlists;
+    });
   }, []);
   console.log('From Spotify-ContextAPI, User', user);
   console.log('From Spotify-ContextAPI, Token', token);
