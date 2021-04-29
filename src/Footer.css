@@ -44,3 +44,6 @@
   transition: transform 0.2s ease-in;
   transform: scale(1.2) !important;
 }
+.footer__right *.MuiSlider-root {
+  color: green;
+}
