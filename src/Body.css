@@ -26,3 +26,17 @@
   margin: 0 20px;
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+.body__shuffle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
