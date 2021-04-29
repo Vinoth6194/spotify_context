@@ -11,7 +11,8 @@ function Body({ spotify }) {
       <Header spotify={spotify} />
       <div className="body__info">
         <img
-          src="https://www.hypebot.com/wp-content/uploads/2020/07/discover-weekly.png"
+          // src="https://www.hypebot.com/wp-content/uploads/2020/07/discover-weekly.png"
+          src={discover_weekly?.images[0].url}
           alt=""
         />
         <div className="body__infoText">
