@@ -22,4 +22,7 @@
 }
 .footer__right {
   flex: 0.3;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
