@@ -40,6 +40,13 @@ function App() {
         playlists: playlists,
       });
     });
+
+    spotify.getPlaylist('37i9dQZF1DWURwnI16u16C').then(res => {
+      dispatch({
+        type: 'SET_DISCOVER_WEEKLY',
+        discover_weekly: res,
+      });
+    });
   }, []);
   console.log('From Spotify-ContextAPI, User', user);
   console.log('From Spotify-ContextAPI, Token', token);

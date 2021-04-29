@@ -3,10 +3,12 @@ export const initialState = {
   playlists: [],
   playing: false,
   item: null,
+  discover_weekly: null,
+
   // token: null,
   //* gets authenticated by default as the token is set, Remove after dev
-  token:
-    'BQDbUUiJ8vksvoWzzt7bjMY6k5_c2HUIaNZDKYqVE3D8dWVllElYhkg5swc6GYP5vGkqb7dK7x0tLQnIjF3Ljb9y7olZDXetQF0poHdfvJPoe6Rrtf1XG3Vga2tG_GjLA4WMVjpUmZnJFsRS4G-WZLMoDuN-NdjD--HyAZfCNj989Kyw',
+  // token:
+  //   'BQDbUUiJ8vksvoWzzt7bjMY6k5_c2HUIaNZDKYqVE3D8dWVllElYhkg5swc6GYP5vGkqb7dK7x0tLQnIjF3Ljb9y7olZDXetQF0poHdfvJPoe6Rrtf1XG3Vga2tG_GjLA4WMVjpUmZnJFsRS4G-WZLMoDuN-NdjD--HyAZfCNj989Kyw',
 };
 
 const reducer = (state, action) => {
@@ -27,6 +29,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         playlists: action.playlists,
+      };
+
+    case 'SET_DISCOVER_WEEKLY':
+      return {
+        ...state,
+        discover_weekly: action.discover_weekly,
       };
     default:
       return state;
