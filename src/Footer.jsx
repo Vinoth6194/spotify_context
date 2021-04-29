@@ -3,7 +3,9 @@ import './Footer.css';
 function Footer() {
   return (
     <div className="footer">
-      <h1>Footer</h1>
+      <div className="footer__left">album details</div>
+      <div className="footer__center">Player controls</div>
+      <div className="footer__right">Volue controls</div>
     </div>
   );
 }
