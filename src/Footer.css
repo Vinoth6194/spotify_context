@@ -39,3 +39,8 @@
 .footer__green {
   color: green;
 }
+.footer__icon:hover,
+.footer__green:hover {
+  transition: transform 0.2s ease-in;
+  transform: scale(1.2) !important;
+}
