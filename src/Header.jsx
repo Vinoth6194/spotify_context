@@ -10,7 +10,7 @@ function Header() {
         <input placeholder="Search for Artists, Albums or Songs" type="text" />
       </div>
 
-      <div className="headder___right">
+      <div className="header___right">
         <Avatar src="" alt="VK" />
         <h4>Vinothkumar</h4>
       </div>
