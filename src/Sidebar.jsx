@@ -19,6 +19,9 @@ function Sidebar() {
       <br></br>
       <strong className="sidebar__title">PLAYLISTS</strong>
       <hr />
+      <SidebarOption title="Hip Hop" />
+      <SidebarOption title="WWE" />
+      <SidebarOption title="Tamil" />
     </div>
   );
 }
