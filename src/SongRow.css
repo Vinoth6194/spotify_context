@@ -22,3 +22,8 @@
   height: 40px;
   width: 40px;
 }
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
