@@ -30,6 +30,8 @@ function Body({ spotify }) {
           <FavoriteIcon fontSize="large" />
           <MoreHorizIcon />
         </div>
+        {console.log('Tracks of Dis Weekly')}
+        {console.log(discover_weekly?.tracks.items)}
       </div>
     </div>
   );
