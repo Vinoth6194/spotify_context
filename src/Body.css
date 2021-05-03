@@ -39,3 +39,7 @@
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.body__shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
