@@ -4,6 +4,7 @@
   height: 100vh;
   color: white;
   padding: 30px;
+  overflow-y: overlay;
 }
 .body__info {
   display: flex;
